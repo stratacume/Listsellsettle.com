@@ -1,0 +1,12 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+  async function generatePDF() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+    const clauses = document.getElementById("editableClauses").value;
+
+    doc.text("NZ Sale & Purchase Agreement", 10, 10);
+    doc.text(clauses, 10, 20);
+    doc.save("SaleAndPurchaseAgreement.pdf");
+  }
+</script>
