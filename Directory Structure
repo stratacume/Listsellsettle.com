@@ -1,0 +1,5 @@
+NZRealEstateApp/
+├── index.html
+├── style.css
+├── script.js
+└── images/        <-- Place your .jpeg files here
